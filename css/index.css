@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+html, body {
+  height: 100%;
+}
+body{
+background: linear-gradient(to left, #232526 , #414345);       
+}
+
+footer{
+    background: linear-gradient(to left, #757F9A , #D7DDE8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    padding: 5px;
+    width: 100%;
+    overflow:hidden;
+    text-align: center;
+}
+
+#portrait {
+	height: 200px; width: 200px;
+	border: 5px solid AA9D9D;
+}
+
+nav{
+	float:left;
+	clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
