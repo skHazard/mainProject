@@ -1,43 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EN">
 <head>
 <meta charset="utf-8">
 <link rel="icon" 
       type="image/png" 
       href="img/favicon.ico">
 <title>Personal Info</title>
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <header>
+	<a name="home"></a>
+    <header class="main-header">
+    	
         <h1>Hi, I am Serhiy Kolesnyk.</h1>
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
         <h2>A front-end developer trainee.</h2>
+        <button><img src="img/magnifier1.png" alt="icon for About section">About</button>
     </header>
 
-    <button>About</button>
-    <img src="#" alt="image-on-button">
-
-    <form>
-        <label><input type="checkbox" name="skills">HTML/CSS</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    
+		<a name="resume"></a>
+    	<article> <section class="about">
+    	<header>About</header>
+    	
+	<p>A motivated front-end developer trainee with fundamental understanding and knowledge in using tools and technical developments also having previous managing and engineering experiences.
+        Currently looking for position to expand existing and to obtain new knowledge with a successful and dynamic company that offers the best use of my existing skills with my further development and improvement. Experienced to work at good performance in difficult environments and overtime or in business travels, able to get along with both work colleagues and senior managers.</p>
+	
+	    <label><input type="checkbox" name="skills">HTML/CSS</label>
         <label><input type="checkbox" name="skills">JavaScript</label>
         <label><input type="checkbox" name="skills">Bootstrap</label>
         <label><input type="checkbox" name="skills" checked>SublimeText3/Cloud9</label>
-    </form>
 
-    <nav>
-        <ul>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </nav>
+	</section>
 
-    <p>A motivated front-end developer trainee with fundamental understanding and knowledge in using tools and technical developments also having previous managing and engineering experiences.
-        Currently looking for position to expand existing and to obtain new knowledge with a successful and dynamic company that offers the best use of my existing skills with my further development and improvement. Experienced to work at good performance in difficult environments and overtime or in business travels, able to get along with both work colleagues and senior managers.</p>
+	<a name="contacts"></a>
+	<section class="contacts">
+	<header>Contacts</header>
+	
 
-        <footer><span>&copy; Hazard - 2016</span></footer>
+	 <form class="contact-form" action="https://formspree.io/kolesnuk_serg@komitex.net" method="POST">
+	    <fieldset id="contactform">
+			<legend>Contacts:</legend>
+                <h3>Please, Submit the form below to contact you!</h3>
+<!--                 <input type="text" name="name" placeholder="Name" required/>
+                <input type="text" name="company" placeholder="Company name (optional)"/>
+                <input type="email" name="_replyto" placeholder="Your email here..." required/>
+                <input type="text" name="phone" placeholder="Your phone number..." required/>
+                
+                    <h3>Write a few words about website you want:</h3>
+                    <textarea name="sitewish" rows="10" cols="30">...share your wishes</textarea>
+                	<input type="submit" value="Send"/> -->
+
+<ul>
+<li>
+    <input type="text" name="first-name" class="field-style field-split align-left" placeholder=" First Name" />
+    <input type="text" name="last-name" class="field-style field-split align-right" placeholder="Last Name" />
+</li>
+<li>
+    <input type="text" name="phone" class="field-style field-split align-left" placeholder="Phone" />
+    <input type="email" name="email" class="field-style field-split align-right" placeholder="Email" />
+</li>
+<li>
+<input type="text" name="subject" class="field-style field-full align-none" placeholder="Subject" />
+</li>
+<li>
+<textarea name="message" class="field-style" placeholder="Message"></textarea>
+</li>
+<li>
+<input type="submit" value="Send Message" />
+</li>
+</ul>
+
+              </fieldset> 
+          
+        </form>
+    </section>
+
+    </article>
+
+
+
+
+
+    
+
+   <footer><span>&copy; Hazard - 2016</span></footer>
         
     </body>
     </html>
