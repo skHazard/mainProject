@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" href="img/favicon.ico">
 <title>Personal Info</title>
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" media="(max-width: 800px)" href="css/index.css">
 </head>
 <body>
 	<a name="home"></a>
@@ -16,7 +16,7 @@
         <h1>Hi, I am Serhiy Kolesnyk.</h1>
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
         <h2>A front-end developer trainee.</h2>
-        <button><img src="img/magnifier1.png" alt="icon for About section">About</button>
+        <button><img src="img/magnifier1.png" alt="icon About">About</button>
     </header>
 
     <nav class="menu">
@@ -29,21 +29,31 @@
     
 		<a name="resume"></a>
     	<article> <section class="about">
-    	<header>About</header>
+    	<header><h2>About</h2></header>
     	
 	<p>A motivated front-end developer trainee with fundamental understanding and knowledge in using tools and technical developments also having previous managing and engineering experiences.
         Currently looking for position to expand existing and to obtain new knowledge with a successful and dynamic company that offers the best use of my existing skills with my further development and improvement. Experienced to work at good performance in difficult environments and overtime or in business travels, able to get along with both work colleagues and senior managers.</p>
 	
-	    <label><input type="checkbox" name="skills">HTML/CSS</label>
-        <label><input type="checkbox" name="skills">JavaScript</label>
-        <label><input type="checkbox" name="skills">Bootstrap</label>
-        <label><input type="checkbox" name="skills" checked>SublimeText3/Cloud9</label>
+	<ul id="skills">
+	    <li>HTML/CSS</li>
+	    <li>Java Sprict/jQuery</li>
+	    <li>Java/MySQL fundamentals</li>
+	    <li>Bootstrap/fontAwesome</li>
+
+	</ul>
+
+	<ul id="tools">
+	  	<li>SublimeText3/Cloud9</li>
+	    <li>Eclipse IDE</li>
+	    <li>MySQL Workbench</li>
+	    <li>GitHub</li>  
+	</ul>
 
 	</section>
 
 	<a name="contacts"></a>
 	<section class="contacts">
-	<header>Contacts</header>
+	<header><h2>Contacts</h2></header>
 	
 
 	 <form class="contact-form" action="https://formspree.io/kolesnuk_serg@komitex.net" method="POST">
