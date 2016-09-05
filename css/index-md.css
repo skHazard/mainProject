@@ -247,6 +247,14 @@ main{
     height: 80px;
 }
 
+.thanks {
+    display: none;
+}
+
+.please {
+    display: block;
+}
+
 /*FOOTER*/
 footer{
     background: linear-gradient(to left, #757F9A , #D7DDE8);

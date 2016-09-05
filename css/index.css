@@ -1,11 +1,4 @@
 /* === CSS Layout for LARGE Screen devices === */
-.thanks {
-    display: none;
-}
-
-.please {
-    display: block;
-}
 
 * {
   	margin: 0;
@@ -254,6 +247,14 @@ main{
 .contact-form ul li textarea{
     width: 100%;
     height: 100px;
+}
+
+.thanks {
+    display: none;
+}
+
+.please {
+    display: block;
 }
 
 /*FOOTER*/
