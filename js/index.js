@@ -26,8 +26,11 @@ $(function () {
 			dataType: "json",
 			success: function () {
 				$(".please").hide();
-				$(".thanks").show();
+				$(".thanks").show().delay(3000).fadeIn(400);
+				var frm = document.getElementsByClass('.contact-form')[0];
+			    frm.reset();
 			}
+			
 		});
 	}
 
