@@ -1,4 +1,11 @@
 /* === CSS Layout for LARGE Screen devices === */
+.thanks {
+    display: none;
+}
+
+.please {
+    display: block;
+}
 
 * {
   	margin: 0;

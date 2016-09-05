@@ -1,7 +1,5 @@
 
 $(function () {
-    
-    $(".thanks").hide();
 
 	$(".aside-about").hide();
 
