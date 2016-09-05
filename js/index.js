@@ -25,7 +25,8 @@ $(function () {
 			},
 			dataType: "json",
 			success: function () {
-				$("#thanks").html('Thank you for Submit!');
+				$("#thanks").hide();
+				$("#thanks").show('Thank you for Submit!');
 			}
 		});
 	}
