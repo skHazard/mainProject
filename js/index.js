@@ -1,5 +1,7 @@
 
 $(function () {
+    
+    $(".thanks").hide();
 
 	$(".aside-about").hide();
 
@@ -25,8 +27,8 @@ $(function () {
 			},
 			dataType: "json",
 			success: function () {
-				$("#thanks").hide();
-				$("#thanks").show('Thank you for Submit!');
+				$(".please").hide();
+				$(".thanks").show();
 			}
 		});
 	}
