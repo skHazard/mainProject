@@ -68,6 +68,7 @@ h3 {
     width: 100%;
 		/*Flex for menu*/
 	display: flex;
+	-webkit-flex-flow: row wrap;
   	flex-flow: row wrap;
   	justify-content: flex-start;
 
@@ -76,7 +77,6 @@ h3 {
 	  display: -ms-flexbox;
 	  display: -webkit-flex;
 	  
-	  -webkit-flex-flow: row wrap;
 	  justify-content: flex-start;
 }
 
@@ -165,19 +165,16 @@ button img {
 /*SECTIONS: Resume and Contacts */
 main{
 	width: 100%;
-	border: 1px solid red;
 }
 
 .main-resume, .main-contacts{
 	height: 800px;
 	margin-top: 50px;
     padding: 50px;
-	border: 1px dotted white;
 }
 
 .resume-list {
 	float: left;
-	border: 1px solid red;
 	height: 140px;
 	width: 600px;
 	padding: 0px 25px;
@@ -219,9 +216,9 @@ main{
     min-height: 35px;
 }
 .contact-form ul li  .field-style{
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+     box-sizing: border-box;
     padding: 8px;
     outline: none;
     border: 1px solid #B0CFE0;
