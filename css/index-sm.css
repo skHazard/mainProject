@@ -22,6 +22,10 @@ body{
 
 /*Applying flex to all body*/
 .wrap{
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
   	flex-flow: row wrap;
   	width: 100%
@@ -73,18 +77,15 @@ h1 {
 	top: 0;
     width: 100%;
 		/*Flex for menu*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: column wrap;
   	flex-flow: column wrap;
   	flex-direction: column;
   	justify-content: flex-end;
-    -webkit-flex-flow: column wrap;
-	  display: -webkit-box;
-	  display: -moz-box;
-	  display: -ms-flexbox;
-	  display: -webkit-flex;
-	  
-	  
-	  
 }
 
 .menu li:last-child {
@@ -141,7 +142,7 @@ h1 {
 
 button, #send-msg{
     width: 130px;
-    height: 40px;
+    height: 38px;
     text-align: center;
     border-style: none;
     font-family:  'Baloo Tamma', Helvetica, sans-serif;

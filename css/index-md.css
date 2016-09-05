@@ -22,6 +22,10 @@ body{
 
 /*Applying flex to all body*/
 .wrap{
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
   	flex-flow: row wrap;
   	width: 100%
@@ -61,6 +65,7 @@ h1 {
 
 /*NAVIGATION - MENU*/
 .menu{
+    border-bottom: 1px solid #33a85e;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -70,15 +75,18 @@ h1 {
 	top: 0;
     width: 100%;
 		/*Flex for menu*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: row wrap;
   	flex-flow: row wrap;
   	justify-content: center;
-    -webkit-flex-flow: row wrap;
-	  display: -webkit-box;
-	  display: -moz-box;
-	  display: -ms-flexbox;
-	  display: -webkit-flex;
-	  
+}
+
+.menu:hover {
+    border-bottom: 1px solid #2D77A2;
 }
 
 .menu li a {
@@ -127,7 +135,7 @@ h1 {
 
 button, #send-msg{
     width: 130px;
-    height: 40px;
+    height: 38px;
     text-align: center;
     border-style: none;
     font-family:  'Baloo Tamma', Helvetica, sans-serif;
