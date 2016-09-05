@@ -3,15 +3,19 @@
 <head>
 	<title>Personal Info</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="img/favicon.ico">
-<link rel="stylesheet" type="text/css"href="https://fonts.googleapis.com/css?family=Baloo Tamma">
-<link rel="stylesheet" type="text/css"href="https://fonts.googleapis.com/css?family=Raleway">
-
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" media="(max-width: 768px)" href="css/index-sm.css">
+<link rel="stylesheet" type="text/css" media="(min-width: 769px) and (max-width: 992px)" href="css/index-md.css">
+<link rel="stylesheet" type="text/css" media="(min-width: 993px)" href="css/index.css">
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baloo Tamma">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 
 </head>
+
 <body class="wrap">
 
 <nav>
@@ -23,6 +27,8 @@
 </nav>
 
 <a name="home"></a>
+<div class="aside-home">
+	
 <aside class="aside-1">
 	 	<h1>Hi, I am Serhiy Kolesnyk.</h1>
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
@@ -36,39 +42,49 @@
 		<p>A motivated front-end developer trainee with fundamental understanding and knowledge in using tools and technical developments also having previous managing and engineering experiences.
         Currently looking for position to expand existing and to obtain new knowledge with a successful and dynamic company that offers the best use of my existing skills with my further development and improvement. Experienced to work at good performance in difficult environments and overtime or in business travels, able to get along with both work colleagues and senior managers.</p>
         <br>
-        <img src="img/html-css-js.png" alt="html/css/js logos">	
+        <img src="img/html-css-js.png" alt="html/css/js logos" id="tools-img">	
 		</article>
 		
 </aside>
+
+</div>
+
 
 <main>
 		<a name="resume"></a>
 		<section class="main-resume">
 			<h2>Resume</h2>
-
-			<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-			similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-			omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-			Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+			
+			<p>Currently attending HTML/CSS/JS Fundamentals courses (from august 2016) at Softserve IT Academy. Experienced to work in stress situations and overtime or in business travels, able to get along with both work colleagues and senior managers. Currently looking for a starting position as a Junior/Trainee Front-End developer with a successful and dynamic company that offers the best use of my existing skills with my further development and improvement.</p>
 			<br>
-			<ul id="skills">
+			<p><strong>Personal skills: </strong> problem solving, organizational, good team player and well effective alone, goals orientated, highly responsible, customer support skills.</p>
+			<p><strong>Foreign languages: </strong> English – intermediate (B2), Russian – advanced, Polish – basic.</p>
+			<br>
+			<img src="img/css3-html5-bootstrap.png" alt="Skills logos" id="skills-img">
+			<div class="resume-list">
+			<div id="tools">
+			<h3>Tools</h3>
+			<ul>
+	  			<li>Sublime Text 3/Cloud9</li>
+	    		<li>Eclipse IDE</li>
+	    		<li>MySQL Workbench</li>
+	    		<li>GitHub</li>  
+			</ul>
+			</div>
+
+			<div id="skills">
+			<h3>Skills</h3>
+			<ul>
 	   			<li>HTML/CSS</li>
 	    		<li>Java Sprict/jQuery</li>
 	    		<li>Java/MySQL fundamentals</li>
 	    		<li>Bootstrap/fontAwesome</li>
 			</ul>
-
-			<ul id="tools">
-	  			<li>SublimeText3/Cloud9</li>
-	    		<li>Eclipse IDE</li>
-	    		<li>MySQL Workbench</li>
-	    		<li>GitHub</li>  
-			</ul>
-			<br>
-			<img src="img/css3-html5-bootstrap.png" alt="Skiils logos">
+			</div>
+			</div>
 
 		</section>
+
 
 		<a name="contacts"></a>
 		<section class="main-contacts">
@@ -78,21 +94,21 @@
 	    		<fieldset id="contactform">
 				<legend></legend>
                 <h3>Please, Submit the form below for contacts!</h3>
-
+				<p id="thanks"></p>
 					<ul>
 					<li>
-					    <input type="text" name="first-name" class="field-style field-split align-left" placeholder=" First Name" />
-					    <input type="text" name="last-name" class="field-style field-split align-right" placeholder="Last Name" />
+					    <input type="text" name="first-name" class="field-style field-split align-left" id="fname" placeholder=" First Name" />
+					    <input type="text" name="last-name" class="field-style field-split align-right" id="lname" placeholder="Last Name" />
 					</li>
 					<li>
-					    <input type="text" name="phone" class="field-style field-split align-left" placeholder="Phone" />
-					    <input type="email" name="email" class="field-style field-split align-right" placeholder="Email" />
+					    <input type="text" name="phone" class="field-style field-split align-left" id="phone" placeholder="Phone" />
+					    <input type="email" name="email" class="field-style field-split align-right" id="email" placeholder="Email" />
 					</li>
 					<li>
-					<input type="text" name="subject" class="field-style field-full align-none" placeholder="Subject" />
+					<input type="text" name="subject" class="field-style field-full align-none" id="subject" placeholder="Subject" />
 					</li>
 					<li>
-					<textarea name="message" class="field-style" placeholder="Message"></textarea>
+					<textarea name="message" class="field-style" id="msg" placeholder="Message"></textarea>
 					</li>
 					<li>
 					<input type="submit" value="Send Message" id="send-msg" />

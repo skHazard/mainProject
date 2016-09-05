@@ -1,4 +1,4 @@
-/* === CSS Layout for LARGE Screen devices === */
+/* === CSS Layout for MEDIUM Screen devices === */
 
 * {
   	margin: 0;
@@ -7,7 +7,7 @@
 
 html, body {
   	font-family:  'Raleway', Helvetica, sans-serif;
-  	font-size: 20px;
+  	font-size: 16px;
   	color: white;
   	height: 100%;
 }
@@ -31,8 +31,13 @@ nav, .aside-home, main, footer {
   	flex: 1 100%;
 }
 
-  /*  And tell the main element to take twice as much width as the other two sidebars */
-  main { flex: 2 0px; }
+ /* We tell both sidebars to share a row */
+aside {
+   flex: 1 auto;
+}
+
+ /*  And tell the main element to take twice as much width as the other two sidebars */
+ main { flex: 2 0px; }
   
   .aside-1 { order: 1; }
   .aside-2 { order: 2; }
@@ -46,15 +51,13 @@ h1,h2, h3, footer {
     font-family:  'Baloo Tamma', Helvetica, sans-serif;
     color: white;
     text-shadow: 2px 2px 4px #303030;
+    font-size: 1.2em;
 }
 
-h2 {
-	margin-top: 30px;
+h1 {
+	font-size: 1.5em;
 }
 
-h3 {
-	font-size: 20px;
-}
 
 /*NAVIGATION - MENU*/
 .menu{
@@ -69,7 +72,7 @@ h3 {
 		/*Flex for menu*/
 	display: flex;
   	flex-flow: row wrap;
-  	justify-content: flex-start;
+  	justify-content: center;
 
 	  display: -webkit-box;
 	  display: -moz-box;
@@ -77,16 +80,7 @@ h3 {
 	  display: -webkit-flex;
 	  
 	  -webkit-flex-flow: row wrap;
-	  justify-content: flex-start;
-}
-
-.menu li {
-  /*  float: left;*/
-    border-right: 1px solid #33a85e;
-}
-
-.menu li:hover {
-    border-right: 1px solid #2D77A2;
+	  
 }
 
 .menu li a {
@@ -109,9 +103,9 @@ h3 {
 
 .aside-home{
 	width: 100%;
-	height: 800px;
-	margin-top: 50px;
-    padding: 50px;
+	height: 600px;
+	margin-top: 30px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -134,19 +128,19 @@ h3 {
 }
 
 button, #send-msg{
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     text-align: center;
     border-style: none;
     font-family:  'Baloo Tamma', Helvetica, sans-serif;
     color: white;
     text-shadow: 2px 2px 4px #303030;
-    border-bottom: 3px solid #33a85e;
+    border-bottom: 2px solid #33a85e;
     background-color: #232526;
 }
 
 button:hover, #send-msg:hover{
-	border-bottom: 3px solid #2D77A2;
+	border-bottom: 2px solid #2D77A2;
 	background-color: #29292b;
 }
 
@@ -169,9 +163,9 @@ main{
 }
 
 .main-resume, .main-contacts{
-	height: 800px;
+	height: 600px;
 	margin-top: 50px;
-    padding: 50px;
+    padding: 45px 20px 20px 20px;
 	border: 1px dotted white;
 }
 
@@ -179,15 +173,14 @@ main{
 	float: left;
 	border: 1px solid red;
 	height: 140px;
-	width: 600px;
-	padding: 0px 25px;
+	width: 660px;
+	padding: 0px 50px;
 }
 
 #skills-img {
     max-height: 20%;
     display: block;
-	float: left;
-	margin-right: 50px;
+	margin: auto;
 }
 
 #tools {
@@ -200,13 +193,13 @@ main{
 
 /*FORM in Contacts section*/
 .contact-form{
-    max-width: 450px;
+    max-width: 410px;
     background: #414345;
-    padding: 30px;
-    margin: 50px auto;
+    padding: 20px;
+    margin: 15px auto;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 0px;
-    border: 5px solid #232526;
+    border: 1px solid #232526;
 }
 .contact-form ul{
     padding:0;
@@ -215,14 +208,14 @@ main{
 }
 .contact-form ul li{
     display: block;
-    margin-bottom: 10px;
-    min-height: 35px;
+    margin-bottom: 5px;
+    min-height: 30px;
 }
 .contact-form ul li  .field-style{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 8px;
+    padding: 5px;
     outline: none;
     border: 1px solid #B0CFE0;
     -webkit-transition: all 0.30s ease-in-out;
@@ -248,7 +241,7 @@ main{
 }
 .contact-form ul li textarea{
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 /*FOOTER*/
