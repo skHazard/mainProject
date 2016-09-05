@@ -27,8 +27,7 @@ $(function () {
 			success: function () {
 				$(".please").hide();
 				$(".thanks").show().delay(3000).fadeIn(500);
-				var frm = document.getElementsByClass('.contact-form')[0];
-			    frm.reset();
+				$(".contact-form").reset();
 			}
 			
 		});
