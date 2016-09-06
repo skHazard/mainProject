@@ -207,6 +207,19 @@ main{
 #tools ul{list-style-type: circle;}
 #skills ul{list-style-type: square;}
 
+.projects {
+  clear: both;
+  margin: auto;
+  width: 100%;
+  display: block;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.projects a {
+  color: white;
+  text-decoration: none;
+}
 
 /*FORM in Contacts section*/
 .contact-form{
