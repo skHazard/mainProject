@@ -30,7 +30,7 @@
 <div class="aside-home">
 	
 <aside class="aside-1">
-	 	<h1>Hi, I am Serhiy Kolesnyk.</h1>
+	 	<h1>Hi, I am Serhiy Kolesnyk</h1>
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
         <h2>A front-end developer trainee.</h2>
         <button><img src="img/magnifier.png" alt="icon About">About</button>
@@ -93,17 +93,17 @@
 			<form class="contact-form" action="https://formspree.io/kolesnuk_serg@komitex.net" method="POST">
 	    		<fieldset id="contactform">
 				<legend></legend>
-                <h3 class="please">Please, Submit the form below for contacts!</h3>
+                <h3 class="please">Please Submit the form below for contacts!</h3>
                 <h3 class="thanks">Thank you for Submit!</h3>
 				<p id="thanks"></p>
 					<ul>
 					<li>
-					    <input type="text" name="first-name" class="field-style field-split align-left" id="fname" placeholder=" First Name" />
+					    <input type="text" required name="first-name" class="field-style field-split align-left" id="fname" placeholder=" First Name" />
 					    <input type="text" name="last-name" class="field-style field-split align-right" id="lname" placeholder="Last Name" />
 					</li>
 					<li>
-					    <input type="text" name="phone" class="field-style field-split align-left" id="phone" placeholder="Phone" />
-					    <input type="email" name="email" class="field-style field-split align-right" id="email" placeholder="Email" />
+					    <input type="text" required name="phone" class="field-style field-split align-left" id="phone" placeholder="Phone" />
+					    <input type="email" name="email" required class="field-style field-split align-right" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
 					</li>
 					<li>
 					<input type="text" name="subject" class="field-style field-full align-none" id="subject" placeholder="Subject" />
