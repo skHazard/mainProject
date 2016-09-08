@@ -19,10 +19,11 @@
 <body class="wrap">
 
 <nav>
-	<ul class="menu">
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+	<ul class="menu" id="nav-bar">
+            <li><a href="#resume" onclick="burgerNav()">Resume</a></li>
+            <li><a href="#home" class="active" onclick="burgerNav()">Home</a></li>
+            <li><a href="#contacts" onclick="burgerNav()">Contacts</a></li>
+            <li class="icon"><a href="javascript:void(0);" onclick="burgerNav()">&#9776;</a></li>
     </ul>
 </nav>
 
@@ -34,6 +35,13 @@
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
         <h2>A front-end developer trainee.</h2>
         <button><img src="img/magnifier.png" alt="icon About">About</button>
+
+        <ul class="social">
+		    <li><a href="https://ua.linkedin.com/in/serhiy-kolesnyk-76ba69102" target="_blank"><img src="img/in.png" alt="linkedin link"></a></li>
+		    <li><a href="https://github.com/skHazard" target="_blank"><img src="img/git.png" alt="github link"></a></li>
+		    <li><a href="https://www.facebook.com/serg.kolesnyk" target="_blank"><img src="img/fb.png" alt="facebook link"></a></li>
+	    </ul>
+
 </aside>
 
 <aside class="aside-2">
@@ -82,7 +90,13 @@
 			</ul>
 			</div>
 			</div>
-			<p class="projects">To see my Barbershop project visit a <a href="#"><strong>link</strong></a>!</p>
+			<p class="projects">To see more of my recent projects follow <strong>the linked images</strong>!</p>
+
+			<ul class="portfolio">
+		       <li class="pt-item"><a href="https://skhazard.github.io/Barbershop-site/" target="_blank"><img src="img/barbershop.png" alt="barbershop site git link"><h4><span>Barbershop Website</span></h4></a></li>
+		       <li class="pt-item"><a href="https://skhazard.github.io/mainProject/" target="_blank"><img src="img/personal.png" alt="personal site git link"><h4><span>Personal Page</span></h4></a></li>
+		       <li class="pt-item"><a href="https://skhazard.github.io/Calco/" target="_blank"><img src="img/calco.png" alt="calco git link"><h4><span>Stylish Calculator</span></h4></a></li>
+	        </ul>
 
 		</section>
 
@@ -96,24 +110,23 @@
 				<legend></legend>
                 <h3 class="please">Please Submit the form below for contacts!</h3>
                 <h3 class="thanks">Thank you for Submit!</h3>
-				<p id="thanks"></p>
 					<ul>
 					<li>
-					    <input type="text" required name="first-name" class="field-style field-split align-left" id="fname" placeholder=" First Name" />
+					    <input type="text" name="first-name" class="field-style field-split align-left" id="fname" placeholder=" First Name" />
 					    <input type="text" name="last-name" class="field-style field-split align-right" id="lname" placeholder="Last Name" />
 					</li>
 					<li>
-					    <input type="text" required name="phone" class="field-style field-split align-left" id="phone" placeholder="Phone" />
-					    <input type="email" name="email" required class="field-style field-split align-right" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+					    <input type="text" name="phone" class="field-style field-split align-left" id="phone" placeholder="Phone" />
+					    <input type="email" name="email" class="field-style field-split align-right" id="email" placeholder="Email" />
 					</li>
 					<li>
-					<input type="text" name="subject" class="field-style field-full align-none" id="subject" placeholder="Subject" />
+					    <input type="text" name="subject" class="field-style field-full align-none" id="subject" placeholder="Subject" />
 					</li>
 					<li>
-					<textarea name="message" class="field-style" id="msg" placeholder="Message"></textarea>
+					    <textarea name="message" class="field-style" id="msg" placeholder="Message"></textarea>
 					</li>
 					<li>
-					<input type="submit" value="Send Message" id="send-msg" />
+					    <input type="submit" value="Send Message" id="send-msg" />
 					</li>
 					</ul>
 

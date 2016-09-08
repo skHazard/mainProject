@@ -1,11 +1,18 @@
 
 $(function () {
 
-	$(".aside-about").hide();
 
-	$("button").bind('click', function(){
+	// $(".aside-about").hide();
+
+	if(!detectmob()){
+        $(".aside-about").hide();
+
+    $("button").bind('click', function(){
 		$(".aside-about").fadeIn(3000);
 	});
+    }
+
+	
 
 	$("#send-msg").click(sendForm);
 
@@ -26,14 +33,35 @@ $(function () {
 			dataType: "json",
 			success: function () {
 				$(".please").hide();
-				$(".thanks").show().delay(3000).fadeIn(500);
-				$(".contact-form").reset();
+				$(".thanks").show();
+				$(".contact-form")[0].reset();
 			}
-			
+
 		});
 	}
 
 });
+
+
+// This is colapsing burger nav with clear CSS and JS
+
+// function burgerNav() {
+//     var x = document.getElementById("nav-bar");
+//     if (x.className === "menu") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "menu";
+//     }
+// }
+
+// This is the same colapsing burger nav using jQuery
+
+$(".menu").click(function() {
+  var navBar = $("#nav-bar");
+  navBar.toggleClass("responsive");
+});
+
+
 
 // Ckeck for mobile devices (i want to make if true NOT to USE aside-about.hide() function to this devices)
 
@@ -43,17 +71,12 @@ $(function () {
 //   return check;
 // };
 
-// function detectmob() {
-//    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-//      return true;
-//    } else {
-//      return false;
-//    }
-// }
-
-// if(!detectmob()){
-//     //YOUR CHAT CODE
-// }
-
+function detectmob() {
+   if(window.innerWidth <= 768 && window.innerHeight <= 1024) {
+     return true;
+   } else {
+     return false;
+   }
+}
 
 
