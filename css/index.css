@@ -10,7 +10,7 @@ html, body {
   	font-size: 20px;
   	color: white;
   	height: 100%;
-  	max-width: 1930px;
+  	max-width: 1920px;
   	margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ body{
 	background: -webkit-linear-gradient(to left, #232526, #414345);
 	background: -moz-linear-gradient(to left, #232526, #414345);
 	background: -o-linear-gradient(to left, #232526, #414345);
-	background: linear-gradient(to left, #232526, #414345);        
+	background: linear-gradient(to left, #232526, #414345);
 	}
 
 /*Applying flex to all body*/
@@ -30,7 +30,7 @@ body{
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
-  width: 100%
+  width: 100%;
 }
 
 nav, .aside-home, main, footer {
@@ -165,6 +165,19 @@ button:hover, #send-msg:hover{
 button img {
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.btn-about {
+/*  position: absolute;
+  z-index: 1;*/
+  margin: 300px auto;
+  background-color: #414345;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
 }
 
 #tools-img {

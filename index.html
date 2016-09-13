@@ -7,6 +7,8 @@
 <link rel="icon" type="image/png" href="img/favicon.ico">
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
 <link rel="stylesheet" type="text/css" media="(max-width: 768px)" href="css/index-sm.css">
 <link rel="stylesheet" type="text/css" media="(min-width: 769px) and (max-width: 992px)" href="css/index-md.css">
 <link rel="stylesheet" type="text/css" media="(min-width: 993px)" href="css/index.css">
@@ -20,21 +22,23 @@
 
 <nav>
 	<ul class="menu" id="nav-bar">
-            <li><a href="#resume" onclick="burgerNav()">Resume</a></li>
-            <li><a href="#home" class="active" onclick="burgerNav()">Home</a></li>
-            <li><a href="#contacts" onclick="burgerNav()">Contacts</a></li>
-            <li class="icon"><a href="javascript:void(0);" onclick="burgerNav()">&#9776;</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li class="icon"><a href="javascript:void(0);">&#9776;</a></li>
     </ul>
 </nav>
 
 <a name="home"></a>
 <div class="aside-home">
 	
+	<button class="btn-about animated wobble"><img src="img/magnifier.png" alt="icon About">About</button>
+	
 <aside class="aside-1">
 	 	<h1>Hi, I am Serhiy Kolesnyk</h1>
         <img src="img/portrait.jpg" alt="CV portrait" id="portrait">
         <h2>A front-end developer trainee.</h2>
-        <button><img src="img/magnifier.png" alt="icon About">About</button>
+        <!--<button><img src="img/magnifier.png" alt="icon About">About</button>-->
 
         <ul class="social">
 		    <li><a href="https://ua.linkedin.com/in/serhiy-kolesnyk-76ba69102" target="_blank"><img src="img/in.png" alt="linkedin link"></a></li>
@@ -84,7 +88,7 @@
 			<h3>Skills</h3>
 			<ul>
 	   			<li>HTML/CSS</li>
-	    		<li>Java Sprict/jQuery</li>
+	    		<li>Java Script/jQuery</li>
 	    		<li>Java/MySQL fundamentals</li>
 	    		<li>Bootstrap/fontAwesome</li>
 			</ul>
