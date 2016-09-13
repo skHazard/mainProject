@@ -205,6 +205,10 @@ button img {
     margin-right: 5px;
 }
 
+.btn-about {
+    display: none;
+}
+
 #tools-img {
 	max-width: 60%;
     height: auto;
